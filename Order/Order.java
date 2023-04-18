@@ -7,12 +7,12 @@ import Menu.MenuItem;
 public class Order{
     private List<MenuItem> items;
     private double totalPrice;
-    private String status;
+    private String comment;
 
-    public Order(List<MenuItem> items, double totalPrice, String status){
+    public Order(List<MenuItem> items, double totalPrice, String comment){
         this.items = items;
         this.totalPrice = totalPrice;
-        this.status = status;
+        this.comment = comment;
     }
 
     public List<MenuItem> getItems(){
@@ -23,8 +23,8 @@ public class Order{
         return totalPrice;
     }
 
-    public String getStatus(){
-        return status;
+    public String getcomment(){
+        return comment;
     }
 
 }
