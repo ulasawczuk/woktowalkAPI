@@ -2,9 +2,9 @@ package Menu;
 
 public class Product {
     private String name;
-    private int price;
+    private double price;
 
-    public Product(String name, int price){
+    public Product(String name, double price){
         this.name = name;
         this.price = price;
     }
@@ -13,7 +13,7 @@ public class Product {
         return name;
     }
 
-    public int getPrice(){
+    public double getPrice(){
         return price;
     }
 

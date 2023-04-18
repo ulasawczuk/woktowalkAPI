@@ -3,13 +3,13 @@ public class Customer {
     private String name;
     private int phoneNumber;
     private String deliveryAddress;
-    private int orderID;
+    private Order order;
     
-    public Customer(String name, int phoneNumber, String deliveryAddress, int orderID){
+    public Customer(String name, int phoneNumber, String deliveryAddress, Order order){
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.deliveryAddress = deliveryAddress;
-        this.orderID = orderID;
+        this.order = order;
     }
 
     public String getName(){
@@ -24,7 +24,7 @@ public class Customer {
         return deliveryAddress;
     }
 
-    public int getOrderID(){
-        return orderID;
+    public Order getOrder(){
+        return order;
     }
 }
