@@ -6,12 +6,12 @@ public class MenuItem {
     private String name;
     private double price;
     private String description;
-    private ArrayList<Product> products;
+    private ArrayList<Ingredient> ingredients;
 
-    public MenuItem(String name, double price, String description, ArrayList<Product> products){
+    public MenuItem(String name, double price, String description, ArrayList<Ingredient> ingredients){
         this.name = name;
         this.price = price;
-        this.products = products;
+        this.ingredients = ingredients;
         this.description = description;
     }
 
@@ -27,8 +27,10 @@ public class MenuItem {
         return description;
     }
 
-    public ArrayList<Product> getProducts(){
-        return products;
+    public ArrayList<Ingredient> getingredients(){
+        return ingredients;
     }
+
+    //add calculatetotalprice from price interface
 
 }

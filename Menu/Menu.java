@@ -12,4 +12,5 @@ public class Menu {
     public ArrayList<MenuItem> getMenu(){
         return menu;
     }
+
 }
