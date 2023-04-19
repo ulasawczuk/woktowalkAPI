@@ -13,4 +13,16 @@ public class Menu {
         return menu;
     }
 
+    public void addItem(MenuItem item){
+        menu.add(item);
+    }
+
+    public void removeItem(MenuItem item){
+        menu.remove(item);
+    }
+
+    public MenuItem getItem(MenuItem item){
+        return menu.get(menu.indexOf(item));
+    }
+
 }

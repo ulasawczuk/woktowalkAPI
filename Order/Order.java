@@ -4,10 +4,11 @@ import java.util.List;
 
 import Menu.MenuItem;
 
-public class Order{
+public abstract class Order{
     private List<MenuItem> items;
     private double totalPrice;
     private String comment;
+    private String status;
 
     public Order(List<MenuItem> items, double totalPrice, String comment){
         this.items = items;
@@ -23,8 +24,16 @@ public class Order{
         return totalPrice;
     }
 
-    public String getcomment(){
+    public String getComment(){
         return comment;
+    }
+
+    public String getStatus(){
+        return status;
+    }
+
+    public void updateStatus(String status){
+        this.status = status;
     }
 
 }

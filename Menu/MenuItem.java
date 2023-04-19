@@ -27,8 +27,28 @@ public class MenuItem {
         return description;
     }
 
-    public ArrayList<Ingredient> getingredients(){
+    public ArrayList<Ingredient> getIngredients(){
         return ingredients;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setPrice(int price){
+        this.price = price;
+    }
+
+    public void setDescription(String description){
+        this.description = description;
+    }
+
+    public void addIngridient(Ingredient ingredient){
+        ingredients.add(ingredient);
+    }
+
+    public void removeIngridient(Ingredient ingredient){
+
     }
 
     //add calculatetotalprice from price interface
