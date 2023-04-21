@@ -1,16 +1,19 @@
 package Menu;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Menu {
-    private ArrayList<MenuItem> menu;
+    private List<MenuItem> menu;
     
-    public Menu(ArrayList<MenuItem> menu){
-        this.menu = menu;
+    public Menu(){
     }
 
-    public ArrayList<MenuItem> getMenu(){
+    public List<MenuItem> getMenu(){
         return menu;
+    }
+
+    public void setMenu(List<MenuItem> menu){
+        this.menu = menu;
     }
 
     public void addItem(MenuItem item){

@@ -1,14 +1,26 @@
 package Order;
 
-import java.util.List;
+public class DeliveryOrder extends Order {
+    private String deliveryAddress;
+    private String client;
 
-import Menu.MenuItem;
+    public DeliveryOrder(){
+    }
 
-public class deliveryOrder extends Order{
-
-    public deliveryOrder(List<MenuItem> items, double totalPrice, String comment) {
-        super(items, totalPrice, comment);
-        //TODO Auto-generated constructor stub
+    public String getDeliveryAddress(){
+        return deliveryAddress;
     }
     
+    public void setDeliveryAddress(String deliveryAddress){
+        this.deliveryAddress = deliveryAddress;
+    }
+
+    public String getClient(){
+        return client;
+    }
+
+    public void setClient(String client){
+        this.client = client;
+    }
+
 }

@@ -1,14 +1,27 @@
 package Order;
 
-import java.util.List;
+import Delivery.DeliveryPerson;
 
-import Menu.MenuItem;
+public class WorkerOrder extends Order {
+    private int table;
+    private DeliveryPerson deliveryPerson;
 
-public class workerOrder extends Order {
-
-    public workerOrder(List<MenuItem> items, double totalPrice, String comment) {
-        super(items, totalPrice, comment);
-        //TODO Auto-generated constructor stub
+    public WorkerOrder(){
     }
-    
+
+    public int getTable(){
+        return table;
+    }
+
+    public void setTable(int table){
+        this.table = table;
+    }
+
+    public DeliveryPerson getDeliveryPerson(){
+        return deliveryPerson;
+    }
+
+    public void setDeliveryPerson(DeliveryPerson deliveryPerson){
+        this.deliveryPerson = deliveryPerson;
+    }
 }

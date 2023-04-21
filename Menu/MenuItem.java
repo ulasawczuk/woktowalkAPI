@@ -1,56 +1,66 @@
 package Menu;
 
-import java.util.ArrayList;
+import java.time.Duration;
+import java.util.List;
 
 public class MenuItem {
     private String name;
     private double price;
     private String description;
-    private ArrayList<Ingredient> ingredients;
+    private List<Ingredient> ingredients;
+    private Duration timeToPrepare;
 
-    public MenuItem(String name, double price, String description, ArrayList<Ingredient> ingredients){
-        this.name = name;
-        this.price = price;
-        this.ingredients = ingredients;
-        this.description = description;
+    public MenuItem(){
+
     }
 
     public String getName(){
         return name;
     }
 
+    public void setName(String name){
+        this.name = name;
+    }
+
     public double getPrice(){
         return price;
+    }
+
+    public void setPrice(double price){
+        this.price = price;
     }
 
     public String getDescription(){
         return description;
     }
 
-    public ArrayList<Ingredient> getIngredients(){
-        return ingredients;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public void setPrice(int price){
-        this.price = price;
-    }
-
     public void setDescription(String description){
         this.description = description;
     }
 
-    public void addIngridient(Ingredient ingredient){
+    public List<Ingredient> getIngredients(){
+        return ingredients;
+    }
+
+    public void setIngredients(List<Ingredient> ingredients){
+        this.ingredients = ingredients;
+    }
+    
+
+    public void addIngredient(Ingredient ingredient){
         ingredients.add(ingredient);
     }
 
-    public void removeIngridient(Ingredient ingredient){
+    public void removeIngredient(Ingredient ingredient){
 
     }
 
-    //add calculatetotalprice from price interface
+    public Duration getTimeToPrepare(){
+        return timeToPrepare;
+    }
+
+    public void setTimeToPrepare(Duration time){
+        this.timeToPrepare = time;
+    }
 
 }
