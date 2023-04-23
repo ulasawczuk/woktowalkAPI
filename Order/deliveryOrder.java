@@ -1,5 +1,6 @@
 package Order;
 
+
 public class DeliveryOrder extends Order {
     private String deliveryAddress;
     private String client;
@@ -22,5 +23,6 @@ public class DeliveryOrder extends Order {
     public void setClient(String client){
         this.client = client;
     }
+    
 
 }

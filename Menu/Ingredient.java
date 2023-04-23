@@ -1,5 +1,6 @@
 package Menu;
 
+//Class representing ingredients of a dish in a menu
 public class Ingredient {
     private String name;
     private double price;

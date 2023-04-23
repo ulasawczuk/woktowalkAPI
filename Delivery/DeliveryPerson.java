@@ -1,5 +1,6 @@
 package Delivery;
 
+//Class representing the delivery person for an order
 public class DeliveryPerson {
     private String name;
     private int id;

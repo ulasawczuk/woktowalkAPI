@@ -24,4 +24,6 @@ public class ScanOrder extends Order {
     public void setDeliveryPerson(DeliveryPerson deliveryPerson){
         this.deliveryPerson = deliveryPerson;
     }
+
+    
 }

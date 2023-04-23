@@ -1,12 +1,17 @@
 package Order;
 
 import java.sql.Date;
+import java.sql.Time;
 import java.time.Duration;
 import java.util.List;
 
 import Menu.MenuItem;
 import Pricing.Pricing;
 
+/**
+ * Abstract class representing an order with its attributes and get and set methods
+ * Can be extended in order to have different kinds of orders
+*/
 public abstract class Order implements Pricing{
     private List<MenuItem> items;
     private double price;
@@ -14,6 +19,7 @@ public abstract class Order implements Pricing{
     private String status;
     private boolean paid;
     private Date date;
+    private Time time;
 
 
     public List<MenuItem> getItems(){
@@ -63,6 +69,14 @@ public abstract class Order implements Pricing{
         this.date = date;
     }
 
+    public Time getTime(){
+        return time;
+    }
+
+    public void setTime(Time time){
+        this.time = time;
+    }
+
     public Duration calculatePreparationTime(List<MenuItem> items){
         Duration time= Duration.ofSeconds(0);
         for(int i = 0; i<items.size(); i++){
@@ -70,6 +84,12 @@ public abstract class Order implements Pricing{
         }
         return time;
     }
-    
+
+    //to be chosen by a client whether to use a default way or a custom way to calculate the price
+    @Override
+    public double calculatePrice(){
+        
+        return price;
+    }
 
 }

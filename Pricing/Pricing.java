@@ -1,10 +1,7 @@
 package Pricing;
-
-import Order.Order;
-
+//interface with a method used to calculate the price of the order
 public interface Pricing {
     
-    public static double calculatePrice(Order order){
-        return 0;
-    }
+    double calculatePrice();
+    
 }       

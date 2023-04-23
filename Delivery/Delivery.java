@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import Order.Order;
 
+//Class containing order with the person delivering it and the delivery time for an order
 public class Delivery {
     private DeliveryPerson deliveryPerson;
     private Order order;

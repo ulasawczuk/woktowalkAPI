@@ -3,6 +3,7 @@ package Menu;
 import java.time.Duration;
 import java.util.List;
 
+//Class representing a dish in a menu, can be used for main dishes, drinks, desserts etc.
 public class MenuItem {
     private String name;
     private double price;
@@ -61,6 +62,14 @@ public class MenuItem {
 
     public void setTimeToPrepare(Duration time){
         this.timeToPrepare = time;
+    }
+
+    public double calculatePrice(){
+        double p = 0;
+        for(Ingredient ingredient: ingredients){
+            p += ingredient.getPrice();
+        }
+        return p;
     }
 
 }

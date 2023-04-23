@@ -2,6 +2,7 @@ package Menu;
 
 import java.util.List;
 
+//Class representing the menu for a restaurant
 public class Menu {
     private List<MenuItem> menu;
     
